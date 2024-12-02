@@ -36,29 +36,34 @@ Before running the project, ensure you have the following installed:
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/Trist4nJ/WinXpress---Tristan-Martinez-Anaelle-Pollart.git
+```
+
+```bash 
 cd WinXpress---Tristan-Martinez-Anaelle-Pollart
+```
 
-
-2. Set Up the Back-End
-Navigate to the backend directory:
-bash
-Copier le code
+### **2. Set Up the Back-End**
+1. Navigate to the backend directory:
+```bash
 cd backend
-Install dependencies:
-bash
-Copier le code
+```
+
+2.Install dependencies:
+```bash
 npm install
-Create a .env file in the backend directory and add the following configuration:
-env
-Copier le code
+```
+
+3. Create a .env file in the backend directory and add the following configuration:
+```env
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
 DB_NAME=PetCareDB
 PORT=5000
-Start MariaDB and create the database:
-sql
-Copier le code
+```
+
+4. Start MariaDB and create the database:
+```sql
 CREATE DATABASE PetCareDB;
 
 USE PetCareDB;
@@ -72,86 +77,43 @@ CREATE TABLE animals (
   weight FLOAT,
   height FLOAT
 );
-Start the back-end server:
-bash
-Copier le code
+```
+
+5. Start the back-end server:
+```bash
 nodemon server.js
-3. Set Up the Front-End
-Navigate to the frontend directory:
-bash
-Copier le code
+```
+
+### **3. Set Up the Front-End**
+1. Navigate to the frontend directory:
+```bash
 cd ../frontend
-Install dependencies:
-bash
-Copier le code
+```
+
+2. Install dependencies:
+```bash
 npm install
-Start the front-end server:
-bash
-Copier le code
+```
+
+3.Start the front-end server:
+```bash
 npm run serve
-How to Run the Application
-Ensure the back-end server is running:
-bash
-Copier le code
+```
+### **How to Run the Application**
+1. Ensure the back-end server is running:
+```bash
 nodemon server.js
-Ensure the front-end server is running:
-bash
-Copier le code
+```
+
+2.Ensure the front-end server is running:
+```bash
 npm run serve
-Open your browser and navigate to:
-bash
-Copier le code
+```
+3.Open your browser and navigate to:
+```bash
 http://localhost:8080
-API Documentation
-The back-end provides RESTful APIs for managing pets. Here are the available endpoints:
+```
 
-GET /api/animals
-
-Fetches all animals from the database.
-Example Response:
-json
-Copier le code
-[
-  {
-    "id": 1,
-    "name": "Buddy",
-    "species": "Dog",
-    "birthDate": "2020-01-01",
-    "vaccines": "Rabies, Parvovirus",
-    "weight": 10.5,
-    "height": 50
-  }
-]
-POST /api/animals
-
-Adds a new animal to the database.
-Request Body (JSON):
-json
-Copier le code
-{
-  "name": "Buddy",
-  "species": "Dog",
-  "birthDate": "2020-01-01",
-  "vaccines": "Rabies, Parvovirus",
-  "weight": 10.5,
-  "height": 50
-}
-DELETE /api/animals/:id
-
-Deletes an animal from the database by ID.
-Troubleshooting
-If the back-end server doesn't start:
-
-Ensure the .env file is configured correctly.
-Check if MariaDB is running and the database exists.
-If the front-end doesn't load:
-
-Ensure the back-end server is running.
-Check for errors in the browser console.
-If API requests fail:
-
-Verify the back-end server is running on http://localhost:5000.
-Ensure CORS is enabled in the back-end (server.js).
-Contributors
-Anaëlle Pollart
+### **Contributors**
+Anaëlle Pollart and 
 Tristan Martinez
