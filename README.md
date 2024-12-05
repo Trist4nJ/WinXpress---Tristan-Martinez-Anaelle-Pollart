@@ -85,7 +85,7 @@ nodemon server.js
 ```
 
 ### **3. Set Up the Front-End**
-1. Navigate to the frontend directory:
+1. Navigate to the frontend directory (in a new cmd window !!):
 ```bash
 cd ../frontend
 ```
